@@ -15,3 +15,9 @@ Petit détail, la box à question est animé pour "flotter".
 
 Résultat:
 ![Screenshot](FAQ.gif)
+
+
+Ce que j'ai apris :
+- L'utilisation d'une double boucle "for" afin d'interragir avec des éléments en NodeList ou Array.
+- A fixer des éléments en fonction de la position: absolute et en fonction de son parent mis en position: relative.
+- A créer des animations en CSS.
