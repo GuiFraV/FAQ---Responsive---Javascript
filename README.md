@@ -2,4 +2,4 @@
 
 
 
-![Screenshot](FAQ.jpg)
+![Screenshot](FAQ.gif)
