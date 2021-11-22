@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#card {
+    width: 1300px;
+    height: 800px;
+    background-color: white;
+    border-radius: 30px; 
+    box-shadow: 0px 59px 300px -19px rgba(0,0,0,0.75);
+    display:flex;
+}
+/* Droite de la card */
+#cardDroite {
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#FAQ {
+    /* border: 2px solid black; */
+    width: 75%;
+    height: 50px;
+    font-size: 37px;
+    font-weight: bolder;
+}
+
+#Questions {
+    /* border: 2px solid blueviolet; */
+    width: 75%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+
+}
+
+.clique {
+    border-bottom: 1px solid grey;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    font-size: 19px;
+    color: hsl(237, 12%, 33%);
+    position: relative;
+}
+
+.clique:hover {
+    color: orange;
+    transition: 0.2s;6
+}
+
+.Apparaitre {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: hsl(240, 6%, 50%);
+    display: none;
+}
+
+#gras {
+    font-weight: 700;
+}
+
+/* Flèches des divs */
+.A1 {
+    height: 100%;
+    filter: invert(55%) sepia(98%) saturate(1910%) hue-rotate(354deg) brightness(96%) contrast(92%);
+}
+
+.Arrow {
+    height: 15px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 20px;
+    transition-duration: 0.2s;
+    transition-property: transform;
+}
+
+#ArrowSwing {
+    transform: rotate(180deg)
+}
+
+/* Gauche de la card */
+#cardGauche {
+    /* background-color: rgb(187, 158, 158); */
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#imageFond {
+    position: absolute;
+    width: 1400px ;
+    left: -820px;
+    top: -399px;
+    
+}
+
+#imageDesk {
+    position: absolute;
+    width: 700px;
+    bottom: 150px;
+    left: -120px ;
+}
+/* Box */
+#box {
+    position:absolute;
+    left: 290px;
+    bottom: 400px ;
+    z-index: 1;
+    animation: myAnim 9s ease-in-out 0s infinite normal forwards;
+}
+/* Faire flotter l'élément box */
+@keyframes myAnim {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70% {
+      transform: translateY(-8px);
+    }
+  
+    20%,
+    40%,
+    60% {
+      transform: translateY(8px);
+    }
+  
+    80% {
+      transform: translateY(6.4px);
+    }
+  
+    90% {
+      transform: translateY(-6.4px);
+    }
+  }
+/* taille de la box */
+#box1 {
+    height: 250px;
+    
+}
+
+
+@media only screen and (max-width: 376px){
+
+    #cardGauche {
+        background-image: url(images/illustration-woman-online-mobile.svg);
+        background-repeat: no-repeat;
+        width: 200px;
+        height: 200px;
+        top: 35px;
+        right: 90px;
+        position: absolute;
+        animation: myAnim 9s ease-in-out 0s infinite normal forwards;
+    }
+
+    #imageFond{
+        display: none;
+    }
+    #imageDesk{
+        display: none;
+    }
+
+    #card {
+        height: 70%;
+        width: 85%;
+        /* border: 2px solid black; */
+        background-image: url(images/bg-pattern-mobile.svg);
+        background-repeat: no-repeat;
+        background-position:center top;
+    }
+    #box {
+        display:none;
+    }
+    #cardDroite{
+        align-items: center;   
+    }
+    #FAQ {
+        text-align: center;
+    }
+   
+    .g{
+        width: 100%;
+        font-size: 13px;
+    }
+    .Apparaitre{
+        font-size: 10px;
+    }
+    .Arrow {
+        height: 12px;
+        /* border: 1px solid black; */
+        right: -20px;
+        top: -2px;
+
+    }
+    .A1{
+        height: 100%;
+    }
+    #Questions{
+        justify-content: space-between;
+        height: 350px;
+        width: 90%;
+        /* border: 2px solid blueviolet; */
+    }
+    .clique{
+        /* background-color: rgb(192, 185, 185); */
+    }
+
+
+
+
+}
