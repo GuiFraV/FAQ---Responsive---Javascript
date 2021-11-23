@@ -18,6 +18,14 @@ Résultat:
 ![Screenshot](FAQ.gif)
 
 
+Pour rendre le tout responsive j'ai utilisé un média queries qui s'adapte à un écran de 375px (équivalent d'un écran de smartphone).
+Petit ajout d'une image flottante.
+
+Résultat :
+
+![Screenshot](FAQ_r.gif)
+
+
 Ce que j'ai appris :
 - L'utilisation d'une double boucle "for" afin d'interragir avec des éléments en NodeList ou Array.
 - A fixer des éléments en fonction de la position: absolute et en fonction de son parent mis en position: relative.
