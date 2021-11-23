@@ -4,7 +4,7 @@ Challenge proposé sur le site Frontend Mentor.
 
 Difficulté: Javascript
 
-L'objectif de ce challenge était de coder en javascript la manière dont les divs (réponses aux questions) aller s'ouvrir et se fermer au moment d'un click dessus.
+Création du css/html + coder en javascript la manière dont les divs (réponses aux questions) aller s'ouvrir et se fermer au moment d'un click dessus.
 Cela avec des fleches qui s'animent faisant une rotation à 180°.
 
 J'ai trouvé la solution en faisant une double boucle for. 
